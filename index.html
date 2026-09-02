@@ -2,7 +2,7 @@
 <html lang="id" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>200+ Video Makkah & Madinah UHD - Akses Lisensi Selamanya</title>
 
   <!-- Tailwind CSS CDN -->
@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   
   <!-- Google Fonts: Plus Jakarta Sans & Space Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
@@ -37,9 +38,9 @@
             }
           },
           boxShadow: {
-            'framer': '0 1px 2px 0 rgba(0, 0, 0, 0.05), 0 10px 25px -5px rgba(0, 0, 0, 0.04), 0 0 1px 1px rgba(0, 0, 0, 0.02)',
-            'framer-hover': '0 20px 35px -10px rgba(0, 0, 0, 0.08), 0 1px 3px 0 rgba(0, 0, 0, 0.05)',
-            'framer-card': '0 0 0 1px rgba(0, 0, 0, 0.06), 0 2px 8px -2px rgba(0, 0, 0, 0.04)',
+            'framer': '0 1px 3px 0 rgba(0, 0, 0, 0.04), 0 10px 25px -5px rgba(0, 0, 0, 0.03), 0 0 1px 1px rgba(0, 0, 0, 0.02)',
+            'framer-hover': '0 20px 35px -10px rgba(0, 0, 0, 0.07), 0 1px 3px 0 rgba(0, 0, 0, 0.04)',
+            'framer-card': '0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 8px -2px rgba(0, 0, 0, 0.04)',
           }
         }
       }
@@ -70,32 +71,35 @@
     /* Hide scrollbars */
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+    /* Touch highlight removal for clean feel */
+    * { -webkit-tap-highlight-color: transparent; }
   </style>
 </head>
 <body class="bg-framer-bg text-framer-dark font-sans antialiased selection:bg-[#18181b] selection:text-white relative overflow-x-hidden framer-dot-grid min-h-screen">
 
   <!-- TOP BAR PROMO MINIMALIS -->
-  <aside aria-label="Informasi Promo" class="bg-white/85 border-b border-zinc-200/80 backdrop-blur-md text-xs py-2.5 px-4 sticky top-0 z-50">
-    <div class="max-w-5xl mx-auto flex items-center justify-center gap-2.5 flex-wrap font-medium text-zinc-700">
+  <aside aria-label="Informasi Promo" class="bg-white/90 border-b border-zinc-200/80 backdrop-blur-md text-xs py-2.5 px-4 sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto flex items-center justify-center gap-2 sm:gap-2.5 flex-wrap font-medium text-zinc-700 text-center">
       <span class="inline-flex items-center gap-1.5 bg-[#eef2ff] text-[#4361ee] px-2.5 py-0.5 rounded-full text-[11px] font-semibold border border-[#4361ee]/20">
         <span class="w-1.5 h-1.5 rounded-full bg-[#4361ee] animate-pulse"></span>
         Promo Terbatas Hari Ini
       </span>
-      <span>Diskon Spesial 200+ Video Tanah Suci berakhir dalam:</span>
-      <span id="top-timer" class="font-mono font-bold text-[#18181b] bg-zinc-100 px-2 py-0.5 rounded border border-zinc-300">02:45:19</span>
-      <a href="#harga" class="text-[#4361ee] font-semibold underline underline-offset-2 hover:text-[#3752db] transition-colors ml-1">Ambil Diskon 99K &rarr;</a>
+      <span class="text-[11px] sm:text-xs">Diskon Spesial 200+ Video berakhir dalam:</span>
+      <span id="top-timer" class="font-mono font-bold text-[#18181b] bg-zinc-100 px-2 py-0.5 rounded border border-zinc-300 text-[11px] sm:text-xs">02:45:19</span>
+      <a href="#harga" class="text-[#4361ee] font-semibold underline underline-offset-2 hover:text-[#3752db] transition-colors ml-1 text-[11px] sm:text-xs">Ambil Diskon 99K &rarr;</a>
     </div>
   </aside>
 
   <!-- 1. HOOK / HERO UTAMA -->
-  <section class="relative pt-16 pb-20 md:pt-24 md:pb-28 overflow-hidden">
+  <section class="relative pt-12 pb-16 sm:pt-16 sm:pb-20 md:pt-24 md:pb-28 overflow-hidden">
     <!-- Ambient Glow Aksen Biru Halus -->
-    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[360px] bg-gradient-to-b from-[#4361ee]/10 via-[#eef2ff]/40 to-transparent rounded-full blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] sm:w-[500px] md:w-[700px] h-[300px] sm:h-[360px] bg-gradient-to-b from-[#4361ee]/10 via-[#eef2ff]/40 to-transparent rounded-full blur-3xl pointer-events-none -z-10"></div>
 
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
       
       <!-- Pill Badge Kategori -->
-      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-zinc-200 shadow-sm text-zinc-700 text-xs font-medium mb-8 hover:border-zinc-300 transition-all">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-zinc-200 shadow-sm text-zinc-700 text-xs font-medium mb-6 sm:mb-8 hover:border-zinc-300 transition-all">
         <span class="w-2 h-2 rounded-full bg-[#4361ee]"></span>
         <span class="text-[#18181b] font-semibold">200+ Video Makkah & Madinah UHD</span>
         <span class="text-zinc-300">|</span>
@@ -103,50 +107,50 @@
       </div>
 
       <!-- Headline -->
-      <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-gradient-dark leading-[1.15] mb-6">
+      <h1 class="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-gradient-dark leading-[1.18] sm:leading-[1.15] mb-5 sm:mb-6">
         Buat Konten Video Islami Umroh <br class="hidden sm:inline" />
         <span class="text-gradient-accent">Tanpa Perlu Terbang ke Tanah Suci</span>
       </h1>
 
       <!-- Subheadline -->
-      <p class="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-zinc-600 mb-10 font-normal leading-relaxed">
+      <p class="max-w-3xl mx-auto text-sm sm:text-base md:text-lg text-zinc-600 mb-8 sm:mb-10 font-normal leading-relaxed px-2">
         Koleksi <strong>200+ Video Asli Makkah & Madinah Kualitas UHD</strong>. Sekali bayar, bebas gunakan selamanya tanpa takut kena copyright!
       </p>
 
-      <!-- Tombol CTA Hero (Hover Ubah Jadi Aksen Biru) -->
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-14">
-        <a href="#harga" class="w-full sm:w-auto px-8 py-4 rounded-full bg-[#18181b] hover:bg-[#4361ee] active:bg-[#4361ee] text-white font-semibold text-sm sm:text-base shadow-lg shadow-zinc-900/10 hover:shadow-[#4361ee]/30 transition-all duration-300 transform hover:-translate-y-0.5 flex items-center justify-center gap-2.5">
+      <!-- Tombol CTA Hero -->
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5 mb-10 sm:mb-14 px-4 sm:px-0">
+        <a href="#harga" class="w-full sm:w-auto px-8 py-4 rounded-full bg-[#18181b] hover:bg-[#4361ee] active:bg-[#3752db] text-white font-semibold text-sm sm:text-base shadow-lg shadow-zinc-900/10 hover:shadow-[#4361ee]/30 transition-all duration-300 transform hover:-translate-y-0.5 active:scale-[0.98] flex items-center justify-center gap-2.5">
           <span>AMBIL AKSES VIDEO SEKARANG</span>
           <span class="text-xs text-zinc-300 font-normal font-mono">— Rp 99.000</span>
           <i class="fa-solid fa-arrow-right text-xs ml-1"></i>
         </a>
       </div>
 
-      <!-- Trust Badges (Icon Centang Hijau) -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 py-5 max-w-4xl mx-auto border-y border-zinc-200/80 text-xs font-medium text-zinc-600">
-        <div class="flex items-center justify-center gap-2">
-          <i class="fa-solid fa-circle-check text-emerald-500"></i>
+      <!-- Trust Badges -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 py-4 sm:py-5 max-w-4xl mx-auto border-y border-zinc-200/80 text-[11px] sm:text-xs font-medium text-zinc-600 text-left sm:text-center">
+        <div class="flex items-center justify-start sm:justify-center gap-2">
+          <i class="fa-solid fa-circle-check text-emerald-500 shrink-0"></i>
           <span>Resolusi Ultra HD (4K/1080p)</span>
         </div>
-        <div class="flex items-center justify-center gap-2">
-          <i class="fa-solid fa-circle-check text-emerald-500"></i>
+        <div class="flex items-center justify-start sm:justify-center gap-2">
+          <i class="fa-solid fa-circle-check text-emerald-500 shrink-0"></i>
           <span>Bebas Watermark & Copyright</span>
         </div>
-        <div class="flex items-center justify-center gap-2">
-          <i class="fa-solid fa-circle-check text-emerald-500"></i>
+        <div class="flex items-center justify-start sm:justify-center gap-2">
+          <i class="fa-solid fa-circle-check text-emerald-500 shrink-0"></i>
           <span>Lisensi Komersial & Pribadi</span>
         </div>
-        <div class="flex items-center justify-center gap-2">
-          <i class="fa-solid fa-circle-check text-emerald-500"></i>
+        <div class="flex items-center justify-start sm:justify-center gap-2">
+          <i class="fa-solid fa-circle-check text-emerald-500 shrink-0"></i>
           <span>Akses Selamanya di Google Drive</span>
         </div>
       </div>
 
-      <!-- CLEAN YOUTUBE VIDEO EMBED (Video Sinematik Makkah Madinah 4K) -->
-      <div class="mt-12 max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-xl aspect-video bg-black">
+      <!-- CLEAN YOUTUBE VIDEO EMBED -->
+      <div class="mt-8 sm:mt-12 max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-xl aspect-video bg-black">
         <iframe 
           class="w-full h-full border-0" 
-          src="https://www.youtube.com/embed/m7bcN_k3e94?rel=0&modestbranding=1" 
+          src="https://www.youtube.com/watch?v=fAoKP9qANq8" 
           title="Preview Cinematic Video Makkah & Madinah UHD" 
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
           referrerpolicy="strict-origin-when-cross-origin"
@@ -158,28 +162,28 @@
   </section>
 
   <!-- 2. PENAWARAN UTAMA (APA YANG BAKAL KAMU DAPET?) -->
-  <section class="py-24 max-w-5xl mx-auto px-4 sm:px-6 border-t border-zinc-200/80">
-    <div class="text-center max-w-2xl mx-auto mb-16">
+  <section class="py-16 sm:py-20 md:py-24 max-w-5xl mx-auto px-4 sm:px-6 border-t border-zinc-200/80">
+    <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
       <span class="text-xs font-mono uppercase tracking-wider text-zinc-500 bg-zinc-100 px-3 py-1 rounded-full border border-zinc-200">
         Highlight Produk
       </span>
-      <h2 class="text-3xl sm:text-4xl font-extrabold text-[#18181b] mt-4 mb-3 tracking-tight">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#18181b] mt-4 mb-3 tracking-tight">
         Apa yang Bakal Kamu Dapet?
       </h2>
-      <p class="text-zinc-600 text-sm sm:text-base">
+      <p class="text-zinc-600 text-xs sm:text-sm md:text-base px-2">
         Aset video beresolusi tinggi yang dirancang untuk mendukung kebutuhan konten dakwah, branding tour travel, maupun reels kontemplasi.
       </p>
     </div>
 
-    <div class="grid md:grid-cols-2 gap-6">
+    <div class="grid md:grid-cols-2 gap-5 sm:gap-6">
       <!-- Item 1 -->
-      <div class="bg-white rounded-2xl p-8 border border-zinc-200 shadow-sm hover:shadow-framer-hover transition-all flex flex-col justify-between">
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-zinc-200 shadow-sm hover:shadow-framer-hover transition-all flex flex-col justify-between">
         <div>
-          <div class="w-12 h-12 rounded-2xl bg-[#eef2ff] text-[#4361ee] flex items-center justify-center text-xl mb-6 border border-[#4361ee]/20">
+          <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-[#eef2ff] text-[#4361ee] flex items-center justify-center text-lg sm:text-xl mb-5 sm:mb-6 border border-[#4361ee]/20">
             <i class="fa-solid fa-kaaba"></i>
           </div>
-          <h3 class="text-xl font-bold text-[#18181b] mb-3">200+ Video Eksklusif</h3>
-          <p class="text-sm text-zinc-600 leading-relaxed">
+          <h3 class="text-lg sm:text-xl font-bold text-[#18181b] mb-2 sm:mb-3">200+ Video Eksklusif</h3>
+          <p class="text-xs sm:text-sm text-zinc-600 leading-relaxed">
             Mengcover sudut-sudut paling syahdu di <strong>Masjidil Haram, Ka'bah, Masjid Nabawi</strong>, momen tawaf, waktu senja pelataran, hingga suasana sudut kota Makkah & Madinah dengan komposisi estetik dan cinematic.
           </p>
         </div>
@@ -189,13 +193,13 @@
       </div>
 
       <!-- Item 2 -->
-      <div class="bg-white rounded-2xl p-8 border border-zinc-200 shadow-sm hover:shadow-framer-hover transition-all flex flex-col justify-between">
+      <div class="bg-white rounded-2xl p-6 sm:p-8 border border-zinc-200 shadow-sm hover:shadow-framer-hover transition-all flex flex-col justify-between">
         <div>
-          <div class="w-12 h-12 rounded-2xl bg-[#eef2ff] text-[#4361ee] flex items-center justify-center text-xl mb-6 border border-[#4361ee]/20">
+          <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl bg-[#eef2ff] text-[#4361ee] flex items-center justify-center text-lg sm:text-xl mb-5 sm:mb-6 border border-[#4361ee]/20">
             <i class="fa-solid fa-mobile-screen-button"></i>
           </div>
-          <h3 class="text-xl font-bold text-[#18181b] mb-3">Siap Pakai untuk Segala Jenis Konten</h3>
-          <p class="text-sm text-zinc-600 leading-relaxed">
+          <h3 class="text-lg sm:text-xl font-bold text-[#18181b] mb-2 sm:mb-3">Siap Pakai untuk Segala Jenis Konten</h3>
+          <p class="text-xs sm:text-sm text-zinc-600 leading-relaxed">
             Sangat cocok buat <strong>Instagram Reels, TikTok, YouTube Shorts</strong>, video promosi paket travel Umroh/Haji, video quote islami harian, opening podcast kajian, hingga latar belakang video sholawat menenangkan.
           </p>
         </div>
@@ -207,83 +211,83 @@
   </section>
 
   <!-- 3. KELEBIHAN & SPESIFIKASI VIDEO -->
-  <section class="py-24 bg-white border-y border-zinc-200/80">
+  <section class="py-16 sm:py-20 md:py-24 bg-white border-y border-zinc-200/80">
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
-      <div class="text-center max-w-2xl mx-auto mb-16">
+      <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
         <span class="text-xs font-mono uppercase tracking-wider text-zinc-500 bg-zinc-100 px-3 py-1 rounded-full border border-zinc-200">
           Kualitas Tanpa Kompromi
         </span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-[#18181b] mt-4 mb-3 tracking-tight">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#18181b] mt-4 mb-3 tracking-tight">
           Kenapa Video Ini Wajib Kamu Miliki?
         </h2>
-        <p class="text-zinc-600 text-sm sm:text-base">
+        <p class="text-zinc-600 text-xs sm:text-sm md:text-base px-2">
           Dibuat dengan standar profesional untuk memastikan setiap detik video memberikan getaran syahdu dan visual terbaik.
         </p>
       </div>
 
       <!-- Bento Grid Kelebihan -->
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
         
         <!-- Poin 1 -->
-        <div class="bg-zinc-50 rounded-2xl p-6 border border-zinc-200 shadow-sm flex flex-col justify-between">
+        <div class="bg-zinc-50 rounded-2xl p-5 sm:p-6 border border-zinc-200 shadow-sm flex flex-col justify-between">
           <div>
             <div class="w-10 h-10 rounded-xl bg-white text-[#18181b] flex items-center justify-center text-base mb-4 border border-zinc-200 shadow-sm">
               <i class="fa-solid fa-tv"></i>
             </div>
-            <h3 class="text-base font-bold text-[#18181b] mb-2">Resolusi Ultra HD (4K / 1080p)</h3>
+            <h3 class="text-sm sm:text-base font-bold text-[#18181b] mb-2">Resolusi Ultra HD (4K / 1080p)</h3>
             <p class="text-xs text-zinc-600 leading-relaxed">
               Gambar sangat tajam, jernih, dan tidak pecah saat diunggah ke platform media sosial mana pun seperti Instagram & TikTok.
             </p>
           </div>
-          <div class="mt-5 text-[11px] font-mono text-emerald-600 font-semibold">
+          <div class="mt-4 pt-3 border-t border-zinc-200/50 text-[11px] font-mono text-emerald-600 font-semibold">
             ✓ Crisp & High Bitrate
           </div>
         </div>
 
         <!-- Poin 2 -->
-        <div class="bg-zinc-50 rounded-2xl p-6 border border-zinc-200 shadow-sm flex flex-col justify-between">
+        <div class="bg-zinc-50 rounded-2xl p-5 sm:p-6 border border-zinc-200 shadow-sm flex flex-col justify-between">
           <div>
             <div class="w-10 h-10 rounded-xl bg-white text-[#18181b] flex items-center justify-center text-base mb-4 border border-zinc-200 shadow-sm">
               <i class="fa-solid fa-camera"></i>
             </div>
-            <h3 class="text-base font-bold text-[#18181b] mb-2">Dokumentasi Asli</h3>
+            <h3 class="text-sm sm:text-base font-bold text-[#18181b] mb-2">Dokumentasi Asli</h3>
             <p class="text-xs text-zinc-600 leading-relaxed">
               Bukan stock free pasaran di internet. Sudut pengambilan gambar sangat estetik, eksklusif, dan memiliki daya tarik emosional tinggi.
             </p>
           </div>
-          <div class="mt-5 text-[11px] font-mono text-emerald-600 font-semibold">
+          <div class="mt-4 pt-3 border-t border-zinc-200/50 text-[11px] font-mono text-emerald-600 font-semibold">
             ✓ Original & Syahdu
           </div>
         </div>
 
         <!-- Poin 3 -->
-        <div class="bg-zinc-50 rounded-2xl p-6 border border-zinc-200 shadow-sm flex flex-col justify-between">
+        <div class="bg-zinc-50 rounded-2xl p-5 sm:p-6 border border-zinc-200 shadow-sm flex flex-col justify-between">
           <div>
             <div class="w-10 h-10 rounded-xl bg-white text-[#18181b] flex items-center justify-center text-base mb-4 border border-zinc-200 shadow-sm">
               <i class="fa-solid fa-sliders"></i>
             </div>
-            <h3 class="text-base font-bold text-[#18181b] mb-2">Format Mentahan (Raw Video)</h3>
+            <h3 class="text-sm sm:text-base font-bold text-[#18181b] mb-2">Format Mentahan (Raw Video)</h3>
             <p class="text-xs text-zinc-600 leading-relaxed">
               Bebas kamu edit, berikan color grading, tambahkan audio sholawat, teks doa, atau narasi voiceover sesuka hati kamu.
             </p>
           </div>
-          <div class="mt-5 text-[11px] font-mono text-emerald-600 font-semibold">
+          <div class="mt-4 pt-3 border-t border-zinc-200/50 text-[11px] font-mono text-emerald-600 font-semibold">
             ✓ Fleksibel Dimodifikasi
           </div>
         </div>
 
         <!-- Poin 4 -->
-        <div class="bg-zinc-50 rounded-2xl p-6 border border-zinc-200 shadow-sm flex flex-col justify-between">
+        <div class="bg-zinc-50 rounded-2xl p-5 sm:p-6 border border-zinc-200 shadow-sm flex flex-col justify-between">
           <div>
             <div class="w-10 h-10 rounded-xl bg-white text-[#18181b] flex items-center justify-center text-base mb-4 border border-zinc-200 shadow-sm">
               <i class="fa-solid fa-shield-halved"></i>
             </div>
-            <h3 class="text-base font-bold text-[#18181b] mb-2">Bebas Watermark & Lisensi</h3>
+            <h3 class="text-sm sm:text-base font-bold text-[#18181b] mb-2">Bebas Watermark & Lisensi</h3>
             <p class="text-xs text-zinc-600 leading-relaxed">
               Polos tanpa watermark mengganggu. 100% aman dipakai untuk proyek konten pribadi maupun video promosi klien usaha travel kamu.
             </p>
           </div>
-          <div class="mt-5 text-[11px] font-mono text-emerald-600 font-semibold">
+          <div class="mt-4 pt-3 border-t border-zinc-200/50 text-[11px] font-mono text-emerald-600 font-semibold">
             ✓ Bebas Strike Copyright
           </div>
         </div>
@@ -293,10 +297,10 @@
   </section>
 
   <!-- 4. KEPEMILIKAN & HAK CIPTA -->
-  <section class="py-20 max-w-5xl mx-auto px-4 sm:px-6">
-    <div class="bg-[#18181b] text-white rounded-3xl p-8 sm:p-12 relative overflow-hidden shadow-2xl">
+  <section class="py-16 sm:py-20 max-w-5xl mx-auto px-4 sm:px-6">
+    <div class="bg-[#18181b] text-white rounded-3xl p-6 sm:p-10 md:p-12 relative overflow-hidden shadow-2xl">
       <!-- Background Ambient -->
-      <div class="absolute -right-20 -bottom-20 w-80 h-80 bg-[#4361ee]/20 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -right-20 -bottom-20 w-60 sm:w-80 h-60 sm:h-80 bg-[#4361ee]/20 rounded-full blur-3xl pointer-events-none"></div>
       
       <div class="relative z-10 max-w-3xl">
         <!-- Badge Hijau untuk Lisensi -->
@@ -304,15 +308,15 @@
           <i class="fa-solid fa-infinity text-emerald-400"></i> Lifetime Commercial & Personal License
         </div>
 
-        <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight mb-4">
+        <h2 class="text-xl sm:text-3xl md:text-4xl font-extrabold tracking-tight mb-4">
           100% Hasil Dokumentasi Sendiri – Akses Lisensi Selamanya
         </h2>
 
-        <p class="text-zinc-300 text-sm sm:text-base leading-relaxed mb-6">
+        <p class="text-zinc-300 text-xs sm:text-sm md:text-base leading-relaxed mb-6">
           Semua video ini diambil secara langsung di lokasi Tanah Suci Makkah dan Madinah. Begitu kamu beli hari ini, akses file ada di tanganmu seumur hidup (<strong>Lifetime Access</strong>). Bebas kamu simpan di drive pribadimu, pakai berulang kali untuk ratusan konten, tanpa biaya langganan bulanan atau ancaman strike copyright!
         </p>
 
-        <div class="flex flex-wrap items-center gap-6 text-xs text-zinc-400 font-mono">
+        <div class="flex flex-wrap items-center gap-4 sm:gap-6 text-xs text-zinc-400 font-mono">
           <div class="flex items-center gap-2">
             <i class="fa-solid fa-check text-emerald-500"></i> No Monthly Subscription
           </div>
@@ -328,27 +332,27 @@
   </section>
 
   <!-- 5. NILAI TAMBAH / VALUE REINFORCEMENT -->
-  <section class="py-24 max-w-5xl mx-auto px-4 sm:px-6">
-    <div class="bg-white rounded-3xl p-8 sm:p-12 border border-zinc-200 shadow-framer relative overflow-hidden">
+  <section class="py-16 sm:py-20 md:py-24 max-w-5xl mx-auto px-4 sm:px-6">
+    <div class="bg-white rounded-3xl p-6 sm:p-10 md:p-12 border border-zinc-200 shadow-framer relative overflow-hidden">
       
       <div class="grid md:grid-cols-2 gap-8 items-center">
         <div>
           <span class="text-xs font-mono uppercase tracking-wider text-[#4361ee] bg-[#eef2ff] px-3 py-1 rounded-full border border-[#4361ee]/20">
             Value Reinforcement
           </span>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#18181b] mt-4 mb-4 tracking-tight">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#18181b] mt-4 mb-4 tracking-tight">
             Hemat Belasan Juta Rupiah!
           </h2>
-          <p class="text-zinc-600 text-sm sm:text-base leading-relaxed mb-6">
+          <p class="text-zinc-600 text-xs sm:text-sm md:text-base leading-relaxed mb-4">
             Gak perlu keluar biaya puluhan juta rupiah dan waktu lama untuk terbang langsung ke Makkah & Madinah cuma buat ngambil stok video.
           </p>
-          <p class="text-zinc-600 text-sm sm:text-base leading-relaxed">
+          <p class="text-zinc-600 text-xs sm:text-sm md:text-base leading-relaxed">
             Cukup dari laptop atau HP kamu, sekarang kamu udah punya perpustakaan video sendiri beresolusi ultra tajam hanya dengan <strong>Rp 99.000</strong>.
           </p>
         </div>
 
         <!-- Perbandingan Biaya -->
-        <div class="bg-zinc-50 rounded-2xl p-6 border border-zinc-200 space-y-4 text-xs sm:text-sm">
+        <div class="bg-zinc-50 rounded-2xl p-5 sm:p-6 border border-zinc-200 space-y-3.5 sm:space-y-4 text-xs sm:text-sm">
           <div class="flex items-center justify-between pb-3 border-b border-zinc-200 text-zinc-500">
             <span>Tiket Pesawat & Visa Umroh:</span>
             <span class="font-mono font-semibold text-zinc-800">± Rp 28.000.000+</span>
@@ -361,9 +365,9 @@
             <span>Waktu & Tenaga Syuting:</span>
             <span class="font-mono font-semibold text-zinc-800">9 - 12 Hari</span>
           </div>
-          <div class="flex items-center justify-between pt-2 text-base font-bold text-[#4361ee] bg-[#eef2ff] p-3 rounded-xl border border-[#4361ee]/20">
+          <div class="flex items-center justify-between pt-2 text-sm sm:text-base font-bold text-[#4361ee] bg-[#eef2ff] p-3 rounded-xl border border-[#4361ee]/20">
             <span>Investasi Paket Video:</span>
-            <span class="font-mono text-lg text-[#18181b]">Cuma Rp 99.000</span>
+            <span class="font-mono text-base sm:text-lg text-[#18181b]">Cuma Rp 99.000</span>
           </div>
         </div>
       </div>
@@ -371,30 +375,30 @@
     </div>
   </section>
 
-  <!-- 6. TESTIMONI (Icon Bintang Kuning Emas) -->
-  <section class="py-24 bg-white border-y border-zinc-200/80">
+  <!-- 6. TESTIMONI (TAMPILAN DISERAGAMKAN DENGAN BORDER TIPIS & BINTANG KUNING) -->
+  <section class="py-16 sm:py-20 md:py-24 bg-white border-y border-zinc-200/80">
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
-      <div class="text-center max-w-2xl mx-auto mb-16">
+      <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
         <span class="text-xs font-mono uppercase tracking-wider text-zinc-500 bg-zinc-100 px-3 py-1 rounded-full border border-zinc-200">
           Ulasan Pembeli
         </span>
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-[#18181b] mt-4 mb-3 tracking-tight">
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#18181b] mt-4 mb-3 tracking-tight">
           Apa Kata Mereka yang Sudah Menggunakan Video Ini?
         </h2>
-        <p class="text-zinc-600 text-sm">
+        <p class="text-zinc-600 text-xs sm:text-sm px-2">
           Dipercaya oleh kreator konten islami, pemilik travel umroh, dan video editor profesional.
         </p>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-6">
+      <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-5 sm:gap-6">
         
         <!-- Card 1 (Kreator Konten) -->
         <div class="bg-white rounded-2xl p-6 border border-zinc-200 shadow-sm hover:shadow-framer-hover transition-all flex flex-col justify-between">
           <div>
-            <div class="flex text-amber-400 text-xs mb-3 gap-1">
+            <div class="flex text-amber-400 text-xs mb-3.5 gap-1">
               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
-            <p class="text-zinc-700 text-xs sm:text-sm leading-relaxed mb-6 italic">
+            <p class="text-zinc-600 text-xs sm:text-sm leading-relaxed mb-6 italic">
               "Bantu banget buat bikin reels harian! Video-nya tajam dan estetik, penonton di TikTok pada nanyain dapet dari mana."
             </p>
           </div>
@@ -403,49 +407,49 @@
               R
             </div>
             <div>
-              <h4 class="font-bold text-xs text-[#18181b]">Rian</h4>
+              <h4 class="font-bold text-xs sm:text-sm text-[#18181b]">Rian</h4>
               <span class="text-[11px] text-zinc-500">Content Creator</span>
             </div>
           </div>
         </div>
 
-        <!-- Card 2 (Pebisnis Travel Umroh) -->
-        <div class="bg-white rounded-2xl p-6 border-2 border-[#18181b] shadow-sm flex flex-col justify-between relative">
+        <!-- Card 2 (Pebisnis Travel Umroh - Sekarang Seragam dengan Card Lainnya) -->
+        <div class="bg-white rounded-2xl p-6 border border-zinc-200 shadow-sm hover:shadow-framer-hover transition-all flex flex-col justify-between">
           <div>
-            <div class="flex text-amber-400 text-xs mb-3 gap-1">
+            <div class="flex text-amber-400 text-xs mb-3.5 gap-1">
               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
-            <p class="text-zinc-800 text-xs sm:text-sm leading-relaxed mb-6 italic font-medium">
+            <p class="text-zinc-600 text-xs sm:text-sm leading-relaxed mb-6 italic">
               "Hemat budget promosi travel kami. Tinggal nambahin teks promo, jadinya kelihatan profesional banget."
             </p>
           </div>
           <div class="flex items-center gap-3 pt-4 border-t border-zinc-100">
-            <div class="w-9 h-9 rounded-full bg-[#4361ee] text-white flex items-center justify-center font-bold text-xs">
+            <div class="w-9 h-9 rounded-full bg-[#18181b] text-white flex items-center justify-center font-bold text-xs">
               HA
             </div>
             <div>
-              <h4 class="font-bold text-xs text-[#18181b]">H. Ahmad</h4>
+              <h4 class="font-bold text-xs sm:text-sm text-[#18181b]">H. Ahmad</h4>
               <span class="text-[11px] text-zinc-500">Owner Tour & Travel</span>
             </div>
           </div>
         </div>
 
         <!-- Card 3 (Editor Video) -->
-        <div class="bg-white rounded-2xl p-6 border border-zinc-200 shadow-sm hover:shadow-framer-hover transition-all flex flex-col justify-between">
+        <div class="bg-white rounded-2xl p-6 border border-zinc-200 shadow-sm hover:shadow-framer-hover transition-all flex flex-col justify-between sm:col-span-2 md:col-span-1">
           <div>
-            <div class="flex text-amber-400 text-xs mb-3 gap-1">
+            <div class="flex text-amber-400 text-xs mb-3.5 gap-1">
               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
-            <p class="text-zinc-700 text-xs sm:text-sm leading-relaxed mb-6 italic">
+            <p class="text-zinc-600 text-xs sm:text-sm leading-relaxed mb-6 italic">
               "Mentahannya enak banget di-edit. Kualitasnya asli 4K, warna dan komposisi gambarnya dapet banget."
             </p>
           </div>
           <div class="flex items-center gap-3 pt-4 border-t border-zinc-100">
-            <div class="w-9 h-9 rounded-full bg-zinc-800 text-white flex items-center justify-center font-bold text-xs">
+            <div class="w-9 h-9 rounded-full bg-[#18181b] text-white flex items-center justify-center font-bold text-xs">
               D
             </div>
             <div>
-              <h4 class="font-bold text-xs text-[#18181b]">Dewi</h4>
+              <h4 class="font-bold text-xs sm:text-sm text-[#18181b]">Dewi</h4>
               <span class="text-[11px] text-zinc-500">Freelance Editor</span>
             </div>
           </div>
@@ -455,60 +459,45 @@
     </div>
   </section>
 
-  <!-- 7. CHECKOUT SECTION (STACKING VALUE & HARGA CORET) -->
-  <section id="harga" class="py-24 relative">
+  <!-- 7. CHECKOUT SECTION (OUTLINE ABU-ABU TIPIS & TANPA TULISAN WORTH CORET) -->
+  <section id="harga" class="py-16 sm:py-20 md:py-24 relative">
     <div class="max-w-3xl mx-auto px-4 sm:px-6">
       
-      <div class="bg-white rounded-3xl p-8 sm:p-12 border-2 border-[#18181b] shadow-framer text-center relative">
+      <!-- Box Outline Abu-abu Tipis -->
+      <div class="bg-white rounded-3xl p-6 sm:p-10 md:p-12 border border-zinc-200 shadow-framer text-center relative">
         
-        <!-- Tag Promo -->
-        <div class="inline-flex items-center gap-1.5 bg-[#18181b] text-white text-xs font-semibold px-4 py-1 rounded-full uppercase tracking-wider mb-6">
-          <i class="fa-solid fa-bolt text-[#4361ee]"></i> PENAWARAN SPESIAL HARI INI
+        <!-- Tag Promo dengan Icon Petir Kuning -->
+        <div class="inline-flex items-center gap-1.5 bg-[#18181b] text-white text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider mb-6">
+          <i class="fa-solid fa-bolt text-amber-400"></i> PENAWARAN SPESIAL HARI INI
         </div>
 
-        <h2 class="text-3xl sm:text-5xl font-extrabold text-[#18181b] tracking-tight mb-3">
+        <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-[#18181b] tracking-tight mb-3">
           Ambil Penawaran Spesial Hari Ini!
         </h2>
-        <p class="text-zinc-600 text-sm sm:text-base max-w-lg mx-auto mb-8">
+        <p class="text-zinc-600 text-xs sm:text-sm md:text-base max-w-lg mx-auto mb-8">
           Dapatkan akses instan ke seluruh pustaka video Makkah & Madinah dengan lisensi komersial seumur hidup.
         </p>
 
-        <!-- Stacking Value List (Icon Centang Hijau) -->
-        <div class="bg-zinc-50 border border-zinc-200 rounded-2xl p-6 text-left max-w-md mx-auto mb-8 text-xs sm:text-sm text-zinc-700 space-y-3">
-          <div class="flex justify-between items-center pb-2 border-b border-zinc-200">
-            <span class="flex items-center gap-2 font-medium">
-              <i class="fa-solid fa-circle-check text-emerald-500"></i>
-              200+ Video Makkah & Madinah UHD
-            </span>
-            <span class="font-mono text-zinc-400 line-through text-xs">Worth Rp 750.000</span>
+        <!-- Stacking Value List (Bersih Tanpa Tulisan Worth Coret) -->
+        <div class="bg-zinc-50 border border-zinc-200 rounded-2xl p-5 sm:p-6 text-left max-w-md mx-auto mb-8 text-xs sm:text-sm text-zinc-700 space-y-3">
+          <div class="flex items-center gap-2.5 pb-2.5 border-b border-zinc-200/80 font-medium">
+            <i class="fa-solid fa-circle-check text-emerald-500 shrink-0 text-sm"></i>
+            <span>200+ Video Makkah & Madinah UHD</span>
           </div>
 
-          <div class="flex justify-between items-center pb-2 border-b border-zinc-200">
-            <span class="flex items-center gap-2 font-medium">
-              <i class="fa-solid fa-circle-check text-emerald-500"></i>
-              Lisensi Komersial & Pribadi Selamanya
-            </span>
-            <span class="font-mono text-zinc-400 line-through text-xs">Worth Rp 500.000</span>
+          <div class="flex items-center gap-2.5 pb-2.5 border-b border-zinc-200/80 font-medium">
+            <i class="fa-solid fa-circle-check text-emerald-500 shrink-0 text-sm"></i>
+            <span>Lisensi Komersial & Pribadi Selamanya</span>
           </div>
 
-          <div class="flex justify-between items-center pb-2 border-b border-zinc-200">
-            <span class="flex items-center gap-2 font-medium">
-              <i class="fa-solid fa-circle-check text-emerald-500"></i>
-              Akses Google Drive Seumur Hidup
-            </span>
-            <span class="font-mono text-zinc-400 line-through text-xs">Worth Rp 300.000</span>
+          <div class="flex items-center gap-2.5 pb-2.5 border-b border-zinc-200/80 font-medium">
+            <i class="fa-solid fa-circle-check text-emerald-500 shrink-0 text-sm"></i>
+            <span>Akses Google Drive Seumur Hidup</span>
           </div>
 
-          <div class="flex justify-between items-center pb-2 border-b border-zinc-200">
-            <span class="flex items-center gap-2 font-medium">
-              <i class="fa-solid fa-circle-check text-emerald-500"></i>
-              Update File Gratis (Jika Ada Tambahan)
-            </span>
-            <span class="font-mono text-zinc-400 line-through text-xs">Worth Rp 200.000</span>
-          </div>
-
-          <div class="pt-2 text-xs font-mono text-zinc-500 text-right">
-            Total Nilai Keseluruhan: <span class="line-through">Rp 1.750.000</span>
+          <div class="flex items-center gap-2.5 font-medium">
+            <i class="fa-solid fa-circle-check text-emerald-500 shrink-0 text-sm"></i>
+            <span>Update File Gratis (Jika Ada Tambahan)</span>
           </div>
         </div>
 
@@ -522,15 +511,15 @@
           </div>
         </div>
 
-        <!-- Tombol CTA Utama: Checkout Sekarang 99K (Lebih Besar & Melebar ke Atas/Bawah) -->
-        <button id="btn-open-checkout" class="w-full sm:max-w-md px-8 py-5 sm:py-6 rounded-2xl bg-[#4361ee] hover:bg-[#3752db] active:bg-[#3752db] text-white font-extrabold text-lg sm:text-xl shadow-xl shadow-[#4361ee]/30 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#4361ee]/40 flex items-center justify-center gap-3 mx-auto">
+        <!-- Tombol CTA Utama: Checkout Sekarang 99K (Tanpa Tanda Panah) -->
+        <button id="btn-open-checkout" class="w-full sm:max-w-md px-8 py-5 sm:py-6 rounded-2xl bg-[#4361ee] hover:bg-[#3752db] active:bg-[#3752db] text-white font-extrabold text-base sm:text-lg md:text-xl shadow-xl shadow-[#4361ee]/30 transition-all duration-300 transform hover:-translate-y-1 active:scale-[0.98] hover:shadow-2xl hover:shadow-[#4361ee]/40 flex items-center justify-center mx-auto">
           <span>Checkout Sekarang 99K</span>
-          <i class="fa-solid fa-arrow-right text-base"></i>
         </button>
 
+        <!-- Footer Note dengan Icon Petir Kuning -->
         <div class="mt-8 pt-6 border-t border-zinc-100 flex flex-col items-center gap-2 text-xs text-zinc-500">
           <div class="flex items-center gap-1.5 text-zinc-500">
-            <i class="fa-solid fa-bolt text-[#4361ee]"></i>
+            <i class="fa-solid fa-bolt text-amber-400"></i>
             <span>Link Google Drive langsung dikirim ke WhatsApp & Email setelah checkout</span>
           </div>
         </div>
@@ -541,18 +530,18 @@
   </section>
 
   <!-- 8. FREQUENTLY ASKED QUESTIONS (FAQ) -->
-  <section id="faq" class="py-20 max-w-3xl mx-auto px-4 sm:px-6">
-    <div class="text-center mb-12">
+  <section id="faq" class="py-16 sm:py-20 max-w-3xl mx-auto px-4 sm:px-6">
+    <div class="text-center mb-10 sm:mb-12">
       <span class="text-xs font-mono uppercase tracking-wider text-zinc-500 bg-zinc-100 px-3 py-1 rounded-full border border-zinc-200">
         FAQ
       </span>
-      <h2 class="text-3xl font-extrabold text-[#18181b] mt-3 tracking-tight">Frequently Asked Questions</h2>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-[#18181b] mt-3 tracking-tight">Frequently Asked Questions</h2>
     </div>
 
     <div class="space-y-3">
       <!-- FAQ 1 -->
       <div class="bg-white rounded-xl border border-zinc-200 overflow-hidden shadow-sm">
-        <button class="faq-toggle w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-sm text-[#18181b] hover:text-[#4361ee] transition-colors">
+        <button class="faq-toggle w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-xs sm:text-sm text-[#18181b] hover:text-[#4361ee] transition-colors">
           <span>Pengiriman file-nya lewat apa?</span>
           <i class="fa-solid fa-chevron-down text-xs text-zinc-400 transition-transform"></i>
         </button>
@@ -563,7 +552,7 @@
 
       <!-- FAQ 2 -->
       <div class="bg-white rounded-xl border border-zinc-200 overflow-hidden shadow-sm">
-        <button class="faq-toggle w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-sm text-[#18181b] hover:text-[#4361ee] transition-colors">
+        <button class="faq-toggle w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-xs sm:text-sm text-[#18181b] hover:text-[#4361ee] transition-colors">
           <span>Apakah ada biaya bulanan?</span>
           <i class="fa-solid fa-chevron-down text-xs text-zinc-400 transition-transform"></i>
         </button>
@@ -574,7 +563,7 @@
 
       <!-- FAQ 3 -->
       <div class="bg-white rounded-xl border border-zinc-200 overflow-hidden shadow-sm">
-        <button class="faq-toggle w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-sm text-[#18181b] hover:text-[#4361ee] transition-colors">
+        <button class="faq-toggle w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-xs sm:text-sm text-[#18181b] hover:text-[#4361ee] transition-colors">
           <span>Bisa di-edit di HP?</span>
           <i class="fa-solid fa-chevron-down text-xs text-zinc-400 transition-transform"></i>
         </button>
@@ -585,7 +574,7 @@
 
       <!-- FAQ 4 -->
       <div class="bg-white rounded-xl border border-zinc-200 overflow-hidden shadow-sm">
-        <button class="faq-toggle w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-sm text-[#18181b] hover:text-[#4361ee] transition-colors">
+        <button class="faq-toggle w-full px-5 py-4 text-left flex items-center justify-between gap-4 font-bold text-xs sm:text-sm text-[#18181b] hover:text-[#4361ee] transition-colors">
           <span>Boleh di-resell / dijual ulang filenya?</span>
           <i class="fa-solid fa-chevron-down text-xs text-zinc-400 transition-transform"></i>
         </button>
@@ -597,13 +586,13 @@
   </section>
 
   <!-- 9. FOOTER -->
-  <footer class="border-t border-zinc-200/80 bg-white py-12 text-zinc-500 text-xs">
+  <footer class="border-t border-zinc-200/80 bg-white py-10 sm:py-12 text-zinc-500 text-xs">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
       <div class="flex items-center gap-2">
         <div class="w-5 h-5 rounded bg-[#18181b] text-white flex items-center justify-center font-bold text-[10px]">
           <i class="fa-solid fa-kaaba"></i>
         </div>
-        <span class="font-bold text-[#18181b] text-sm">VideoTanahSuci.id</span>
+        <span class="font-bold text-[#18181b] text-sm">by menjadibos.com</span>
       </div>
       <div>&copy; 2026 Video Makkah & Madinah. All rights reserved.</div>
       <div class="flex gap-4">
@@ -614,33 +603,33 @@
     </div>
   </footer>
 
-  <!-- 10. FLOATING STICKY CTA (Hover Ubah Jadi Aksen Biru) -->
+  <!-- 10. FLOATING STICKY CTA -->
   <div class="fixed bottom-4 left-4 right-4 sm:left-auto sm:right-6 sm:bottom-6 z-40 max-w-sm ml-auto">
-    <div class="bg-white/90 backdrop-blur-md rounded-2xl p-3 border border-zinc-300/80 shadow-framer-hover flex items-center justify-between gap-3">
+    <div class="bg-white/95 backdrop-blur-md rounded-2xl p-3 border border-zinc-300/80 shadow-framer-hover flex items-center justify-between gap-3">
       <div class="text-xs">
         <div class="font-bold text-[#18181b]">Video UHD: Rp 99.000</div>
         <div class="text-[10px] text-zinc-500">200+ Video Makkah & Madinah</div>
       </div>
-      <a href="#harga" class="px-4 py-2 rounded-full bg-[#18181b] hover:bg-[#4361ee] active:bg-[#4361ee] text-white font-semibold text-xs whitespace-nowrap transition-all duration-200 active:scale-95 shadow-sm">
+      <a href="#harga" class="px-4 py-2.5 rounded-full bg-[#18181b] hover:bg-[#4361ee] active:bg-[#3752db] text-white font-semibold text-xs whitespace-nowrap transition-all duration-200 active:scale-95 shadow-sm">
         Beli Sekarang &rarr;
       </a>
     </div>
   </div>
 
-  <!-- 11. CHECKOUT MODAL FORMULIR -->
-  <div id="checkout-modal" class="fixed inset-0 bg-black/40 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
-    <div class="bg-white rounded-2xl max-w-md w-full p-6 sm:p-8 border border-zinc-200 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+  <!-- 11. CHECKOUT MODAL FORMULIR (RESPONSIF MOBILE/TABLET) -->
+  <div id="checkout-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full p-5 sm:p-7 md:p-8 border border-zinc-200 shadow-2xl relative max-h-[92vh] overflow-y-auto">
       
       <!-- Close Button -->
-      <button id="btn-close-modal" class="absolute top-4 right-4 text-zinc-400 hover:text-zinc-800 text-base">
+      <button id="btn-close-modal" aria-label="Tutup Formulir" class="absolute top-4 right-4 text-zinc-400 hover:text-zinc-800 p-2 text-base transition-colors">
         <i class="fa-solid fa-xmark"></i>
       </button>
 
-      <div class="text-center mb-6">
+      <div class="text-center mb-5 sm:mb-6">
         <div class="w-10 h-10 rounded-xl bg-[#eef2ff] text-[#4361ee] flex items-center justify-center text-base mx-auto mb-2">
           <i class="fa-solid fa-kaaba"></i>
         </div>
-        <h3 class="text-xl font-extrabold text-[#18181b]">Formulir Akses Video</h3>
+        <h3 class="text-lg sm:text-xl font-extrabold text-[#18181b]">Formulir Akses Video</h3>
         <p class="text-xs text-zinc-500 mt-1">Akses folder Google Drive instan via WhatsApp & Email.</p>
       </div>
 
@@ -651,12 +640,12 @@
           <span>200+ Video Makkah & Madinah UHD</span>
         </div>
         <div class="flex justify-between pt-1">
-          <span>Total Nilai Normal:</span>
-          <span class="line-through text-zinc-400">Rp 1.750.000</span>
+          <span>Harga Normal:</span>
+          <span class="line-through text-zinc-400">Rp 399.000</span>
         </div>
         <div class="flex justify-between">
           <span>Diskon Promo:</span>
-          <span class="text-emerald-600">- Rp 1.651.000</span>
+          <span class="text-emerald-600">- Rp 300.000</span>
         </div>
         <div class="flex justify-between text-sm font-bold text-[#18181b] pt-1.5 border-t border-zinc-200 font-sans">
           <span>Total Pembayaran:</span>
@@ -667,24 +656,23 @@
       <!-- Form Sederhana Tanpa Opsi Metode Pembayaran -->
       <form id="order-form" class="space-y-3.5 text-left">
         <div>
-          <label class="block text-xs font-semibold text-zinc-700 mb-1">Nama Lengkap</label>
-          <input type="text" id="cust-name" required placeholder="Contoh: Muhammad Ilham" class="w-full bg-white border border-zinc-300 rounded-lg px-3.5 py-2 text-xs text-[#18181b] focus:outline-none focus:border-[#4361ee]" />
+          <label for="cust-name" class="block text-xs font-semibold text-zinc-700 mb-1">Nama Lengkap</label>
+          <input type="text" id="cust-name" required placeholder="Contoh: Muhammad Ilham" class="w-full bg-white border border-zinc-300 rounded-lg px-3.5 py-2.5 text-base sm:text-xs text-[#18181b] focus:outline-none focus:border-[#4361ee] transition-colors" />
         </div>
 
         <div>
-          <label class="block text-xs font-semibold text-zinc-700 mb-1">Nomor WhatsApp Aktif (Wajib)</label>
-          <input type="tel" id="cust-wa" required placeholder="Contoh: 08123456789" class="w-full bg-white border border-zinc-300 rounded-lg px-3.5 py-2 text-xs text-[#18181b] focus:outline-none focus:border-[#4361ee]" />
+          <label for="cust-wa" class="block text-xs font-semibold text-zinc-700 mb-1">Nomor WhatsApp Aktif (Wajib)</label>
+          <input type="tel" id="cust-wa" required placeholder="Contoh: 08123456789" class="w-full bg-white border border-zinc-300 rounded-lg px-3.5 py-2.5 text-base sm:text-xs text-[#18181b] focus:outline-none focus:border-[#4361ee] transition-colors" />
           <span class="text-[10px] text-zinc-400 mt-0.5 block">*Link Google Drive akan dikirimkan otomatis ke nomor ini.</span>
         </div>
 
         <div>
-          <label class="block text-xs font-semibold text-zinc-700 mb-1">Alamat Email (Untuk Invite Drive)</label>
-          <input type="email" id="cust-email" required placeholder="email@gmail.com" class="w-full bg-white border border-zinc-300 rounded-lg px-3.5 py-2 text-xs text-[#18181b] focus:outline-none focus:border-[#4361ee]" />
+          <label for="cust-email" class="block text-xs font-semibold text-zinc-700 mb-1">Alamat Email (Untuk Invite Drive)</label>
+          <input type="email" id="cust-email" required placeholder="email@gmail.com" class="w-full bg-white border border-zinc-300 rounded-lg px-3.5 py-2.5 text-base sm:text-xs text-[#18181b] focus:outline-none focus:border-[#4361ee] transition-colors" />
         </div>
 
-        <button type="submit" class="w-full py-3.5 rounded-xl bg-[#4361ee] hover:bg-[#3752db] text-white font-bold text-xs shadow-md transition-all mt-4 flex items-center justify-center gap-2">
+        <button type="submit" class="w-full py-3.5 rounded-xl bg-[#4361ee] hover:bg-[#3752db] active:bg-[#3752db] text-white font-bold text-xs sm:text-sm shadow-md transition-all active:scale-[0.99] mt-4 flex items-center justify-center">
           <span>LANJUTKAN PESANAN (RP 99.000)</span>
-          <i class="fa-solid fa-arrow-right text-[10px]"></i>
         </button>
       </form>
 
@@ -753,11 +741,13 @@
       function openModal() {
         checkoutModal.classList.remove('hidden');
         checkoutModal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
       }
 
       function closeModal() {
         checkoutModal.classList.add('hidden');
         checkoutModal.classList.remove('flex');
+        document.body.style.overflow = '';
       }
 
       if (btnOpenCheckout) btnOpenCheckout.addEventListener('click', openModal);
